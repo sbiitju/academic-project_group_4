@@ -19,6 +19,13 @@ public class MainActivity extends AppCompatActivity {
         teacherBtn=findViewById(R.id.teacher);
         studentBtn=findViewById(R.id.student);
         stffBtn=findViewById(R.id.stuff);
+
+
+        stffBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            }
+        });
         teacherBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
