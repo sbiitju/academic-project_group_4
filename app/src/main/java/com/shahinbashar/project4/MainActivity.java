@@ -24,20 +24,19 @@ public class MainActivity extends AppCompatActivity {
         stffBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,StuffList.class));
             }
         });
         teacherBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,TeacherList.class));
-                finish();
             }
         });
         studentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,StudentList.class));
-                finish();
             }
         });
     }

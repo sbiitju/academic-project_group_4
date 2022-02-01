@@ -21,8 +21,8 @@ public class TeacherList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_list);
-        list=new ArrayList<>();
         recyclerView=findViewById(R.id.teacherRecyclerView);
+        list=new ArrayList<>();
         Model kaisar=new Model("Shamim Kaisar","01728748989");
         Model shamim_al_mamun=new Model("Shamim Al Mamun","01728748989");
         Model mesbah=new Model("Dr. MesbahUddin Sarker","01728748989");
@@ -33,6 +33,16 @@ public class TeacherList extends AppCompatActivity {
         Model sohidul_islam=new Model("Sohidul Islam","01728748989");
         Model fahima_tabassum=new Model("Fahima Tabassum","01728748989");
         Model rashed_mazumdar=new Model("Rashed Mazumdar","01728748989");
+        list.add(kaisar);
+        list.add(shamim_al_mamun);
+        list.add(mesbah);
+        list.add(sazzadur_rahman);
+        list.add(jesmin_akhter);
+        list.add(manan_bint_taz_noor);
+        list.add(risala_khan);
+        list.add(sohidul_islam);
+        list.add(fahima_tabassum);
+        list.add(rashed_mazumdar);
         Model fazlul_karim_patowary=new Model("Fazlul Karim Patowary","01728748989");
         MyAdapter myAdapter=new MyAdapter(list,pic,this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
