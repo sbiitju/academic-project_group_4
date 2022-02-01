@@ -1,9 +1,9 @@
 package com.shahinbashar.project4.model;
 
-public class Student {
+public class Model {
     private String name,number;
 
-    public Student(String name, String number) {
+    public Model(String name, String number) {
         this.name = name;
         this.number = number;
     }

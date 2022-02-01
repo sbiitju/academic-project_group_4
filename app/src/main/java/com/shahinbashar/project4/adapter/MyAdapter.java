@@ -9,16 +9,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.shahinbashar.project4.R;
-import com.shahinbashar.project4.model.Student;
-
+import com.shahinbashar.project4.model.Model;
 import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
-    private List<Student> studentList;
+    private List<Model> studentList;
     private int[] pictureList;
     private Context context;
 
-    public MyAdapter(List<Student> studentList, int[] pictureList, Context context) {
+    public MyAdapter(List<Model> studentList, int[] pictureList, Context context) {
         this.studentList = studentList;
         this.pictureList = pictureList;
         this.context = context;

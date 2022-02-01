@@ -10,29 +10,31 @@ import android.view.View;
 import android.widget.Button;
 
 import com.shahinbashar.project4.adapter.MyAdapter;
-import com.shahinbashar.project4.model.Student;
+import com.shahinbashar.project4.model.Model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class StudentList extends AppCompatActivity {
-    int[] pic={R.drawable.kambaiilogo,R.drawable.first_image,R.drawable.second_image,R.drawable.splashpic};
-    List<Student> list;
+    int[] pic={R.drawable.sojib,R.drawable.sithi,R.drawable.bhabna,R.drawable.nusiba,R.drawable.shahin};
+    List<Model> list;
     RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_list);
         recyclerView=findViewById(R.id.studentListView);
+        Model sojib=new Model("Nuruzzaman Sojib","01996507877");
+        Model fabliha_noshin_sithi=new Model("Fabliha Noshin Sithi","01910878558");
+        Model bhabnaMukherjee=new Model("Bhabna Mukherjee","01819438077");
+        Model nusaiba_kalam=new Model("Nusaiba Kalam","01784384177");
+        Model shahin_bashar=new Model("Shahin Bashar","01613162522");
         list=new ArrayList<>();
-        Student student1=new Student("Shahin Bashar","01613162522");
-        Student student2=new Student("Binoy Bin Anowar","01613162522");
-        Student student3=new Student("Rumman","01613162522");
-        Student student4=new Student("Shaon","01613162522");
-        list.add(student1);
-        list.add(student2);
-        list.add(student3);
-        list.add(student4);
+        list.add(sojib);
+        list.add(fabliha_noshin_sithi);
+        list.add(bhabnaMukherjee);
+        list.add(nusaiba_kalam);
+        list.add(shahin_bashar);
         MyAdapter myAdapter=new MyAdapter(list,pic,this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         recyclerView.setAdapter(myAdapter);
